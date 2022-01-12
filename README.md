@@ -1,11 +1,11 @@
 # Portifolio
-Meu Portifolio
+Meu Portifolio.
 
 ## Tarefas
-O controle das tarefas desse projeto será realizado no GitHub
+O controle das tarefas desse projeto será realizado no GitHub.
 
 ## Icones
-:package: Nova funcionalidade
-:up: atualização
-:beatle: cooreção de bug
-:checkered_flag:release
+-  : package : nova funcionalidade
+-  : up : atualização
+-  : beetle : correção de bug
+-  : checkered_flag : lançamento
