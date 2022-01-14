@@ -33,7 +33,7 @@ html {
 }
 
 .show-menu .hamburguer {
-    right: 18rem;
+    right: 16rem;
 }
 
 .line {
@@ -54,7 +54,7 @@ html {
 }
 
 .show-menu #line3 {
-    transform: rotate(45deg) translate(0.3rem, -0.45rem);
+    transform: rotate(-45deg) translate(0.3rem, -0.45rem);
 }
 
 .hamburguer span {
@@ -224,10 +224,11 @@ header {
 }
 
 .social-media i {
+    background-color: #6a3093;
     color: #ffffff;
     height: 2.5rem;
     width: 2.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
