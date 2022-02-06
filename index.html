@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
 
 <head>
     <meta charset="UTF-8" />
@@ -9,11 +9,20 @@
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png" />
-
     <title>Portfólio</title>
 </head>
 
 <body>
+
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="center">
+            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <div class="ring"></div>
+            <span>loading...</span>
+        </div>
+    </div>
+
     <div class="container">
 
         <div class="hamburguer">
@@ -38,7 +47,7 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#conhecimento" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
                     <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
                     <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
                     <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
@@ -47,7 +56,8 @@
             <div class="social-media">
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://github.com/edu07slls" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/eduardo-salles-277a9771/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/eduardo-salles-277a9771/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
             </div>
         </aside>
 
@@ -195,21 +205,47 @@
                 <div class="contato-left"></div>
                 <div class="contato-right">
                     <h1>Contato</h1>
-                    <form>
+                    <form action="https://formsubmit.co/eduardo.salles2012@hotmail.com" method="POST" target="_blank">
                         <div class="input-group">
-                            <input type="text" class="field" id="nome">
-                            <label for="nome" class="field-label">Nome</label>
+                            <label for="nome" class="field-label" ></label>
+                            <input placeholder="Nome" type="text" class="field" id="nome" name="nome" required>
                         </div>
+
                         <div class="input-group">
-                            <input type="text" class="field" id="email">
-                            <label for="email" class="field-label">E-mail</label>
+                            <label for="email" class="field-label"></label>
+                            <input placeholder="E-mail" type="email" class="field" id="email" name="email" required>
                         </div>
+
                         <div class="input-group">
-                            <textarea type="text" class="field" id="mensagem"></textarea>
-                            <label for="mensagem" class="field-label">Mensagem</label>
+                            <label for="mensagem" class="field-label"></label>
+                            <textarea placeholder="Mensagem" type="text" class="field" id="mensagem" name="mensagem" required></textarea>
                         </div>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+
                         <button type="submit" class="btn btn-submit">Enviar</button>
+                        <input type="reset" class="btn btn-submit" value="Limpar">
                     </form>
+
+                    <!--form action="https://formsubmit.co/eduardo.salles2012@hotmail.com" method="POST" target="_blank">
+                        <div class="input-group">
+                            <label for="nome" class="field-label">Nome</label>
+                            <input type="text" class="field" id="nome" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="field-label">E-mail</label>
+                            <input type="text" class="field" id="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                            <textarea type="text" class="field" id="mensagem" required></textarea>
+                        </div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form-->
                 </div>
             </div>
         </section>
@@ -244,7 +280,7 @@
         <footer>
             <div class="footer-content">
                 <p>
-                    Created By: Eduardo Salles | All Rights Reserved!
+                    Created By: Eduardo Salles&copy | All Rights Reserved!
                     <!--Copyright &copy: 2022, Eduardo Salles | All Rights Reserved!-->
                 </p>
                 <div class="social-list">
@@ -252,8 +288,8 @@
                                 class="fab fa-facebook"></i></a>
                         <ul class="li"><a href="https://www.instagram.com/eduardo_slls/" target="_blank"><i
                                     class="fab fa-instagram"></i></a>
-                            <ul class="li"><a href="https://www.linkedin.com/in/eduardo-salles-277a9771/" target="_blank"><i
-                                        class="fab fa-linkedin"></i></a>
+                            <ul class="li"><a href="https://www.linkedin.com/in/eduardo-salles-277a9771/"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </footer>
@@ -265,5 +301,6 @@
     </div>
 </body>
 <script src="script.js"></script>
+<script src="/preloader.js"></script>
 
 </html>
