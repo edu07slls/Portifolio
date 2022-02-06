@@ -7,7 +7,7 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
 //<![CDATA[
   $(window).on('load', function () {
     $('#preloader .inner').fadeOut();
-    $('#preloader').delay(4000).fadeOut('slow'); 
-    $('body').delay(4000).css({'overflow': 'visible'});
+    $('#preloader').delay(1000).fadeOut('slow'); 
+    $('body').delay(1000).css({'overflow': 'visible'});
   })
   //]]>
