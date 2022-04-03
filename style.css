@@ -31,7 +31,8 @@ h4 {
 }
 
 .obrigado h4::before {
-    content: "🐅";
+    content: "\f00c";
+    font-family:FontAwesome;
     display: block;
 }
 
